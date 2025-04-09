@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExerciseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/exercisesButton"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/arrow_back"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:background="@null"
+            android:textStyle="bold"
+            android:onClick="onExerciseButtonClicked"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo"
+            android:background="@null"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/exerciseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="4dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ViewSwitcher
+            android:id="@+id/favouriteButtonSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:src="@drawable/empty_star"
+                android:scaleType="centerInside"
+                android:layout_margin="4dp"
+                android:onClick="onNotFavouriteButtonClicked"/>
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@null"
+                android:src="@drawable/star"
+                android:scaleType="centerInside"
+                android:layout_margin="4dp"
+                android:onClick="onFavouriteButtonClicked"/>
+        </ViewSwitcher>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weightTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:padding="4dp"
+            android:layout_marginLeft="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/minusWeightButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/minus_exercise"
+                    android:background="@color/light_gray"
+                    android:scaleType="centerInside"
+                    android:onClick="onMinusWeightButtonClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom">
+
+                <EditText
+                    android:id="@+id/weightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/plusWeightButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@color/light_gray"
+                    android:src="@drawable/plus_exercise"
+                    android:scaleType="centerInside"
+                    android:onClick="onPlusWeightButtonClicked"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reps"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:padding="4dp"
+            android:layout_marginLeft="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/minusRepsButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/minus_exercise"
+                    android:background="@color/light_gray"
+                    android:scaleType="centerInside"
+                    android:onClick="onMinusRepsButtonClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom">
+
+                <EditText
+                    android:id="@+id/repsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:layout_gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/plusRepsButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@color/light_gray"
+                    android:src="@drawable/plus_exercise"
+                    android:scaleType="centerInside"
+                    android:onClick="onPlusRepsButtonClicked"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/saveExerciseButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:background="@drawable/button_blue_rounded"
+                android:onClick="onSaveExerciseButtonClicked"/>
+
+            <Button
+                android:id="@+id/clearExerciseButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:background="@drawable/button_red_rounded"
+                android:onClick="onClearExerciseButtonClicked"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/exerciseListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+    </LinearLayout>
+</LinearLayout>

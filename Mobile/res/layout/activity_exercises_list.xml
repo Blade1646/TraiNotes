@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExercisesListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray">
+
+        <Button
+            android:id="@+id/exercisesButton"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/arrow_back"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:background="@null"
+            android:textStyle="bold"
+            android:onClick="onExercisesButtonClicked"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/logo"
+            android:background="@null"
+            android:layout_margin="4dp" />
+
+        <TextView
+            android:id="@+id/categoriesExercisesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/categories"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="4dp"/>
+
+        <ImageButton
+            android:id="@+id/plusExerciseButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/plus"
+            android:scaleType="centerInside"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="onPlusExerciseCategoriesButtonClicked"/>
+    </LinearLayout>
+
+    <ViewSwitcher
+        android:id="@+id/exercisesViewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/categoriesListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/emptyCategoriesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_horizontal"
+                android:text="@string/empty_categories_list"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/exercisesListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/emptyExercisesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_horizontal"
+                android:text="@string/empty_exercises_list"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ViewSwitcher>
+</LinearLayout>

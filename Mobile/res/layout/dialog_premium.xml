@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_version"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blue"
+        android:layout_margin="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/premium_features"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_margin="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/googlePayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/buy"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/button_blue_rounded"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/button_red_rounded"/>
+
+    </LinearLayout>
+</LinearLayout>

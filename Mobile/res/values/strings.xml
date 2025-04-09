@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">TraiNotes_Mobile</string>
+    <string name="app_short_name">TraiNotes</string>
+
+    <!--Symbols-->
+    <string name="arrow_back"><![CDATA[<-]]></string>
+    <string name="arrow_forward"><![CDATA[->]]></string>
+    <string name="circle_checked"><![CDATA[⚫]]></string>
+    <string name="circle_unchecked"><![CDATA[⚪]]></string>
+
+    <!--Toasts-->
+    <string name="enter_values">Please, enter values for this approach!</string>
+    <string name="wait_for_updates">Wait for new updates!</string>
+    <string name="password_isnt_changed">Password isn\'t changed. Invalid input!</string>
+
+    <!--Layouts-->
+    <string name="sign_in_to_app">Sign in to TraiNotes</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">"                    Sign In                    "</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+
+    <string name="empty_workout_log">Workout log is empty</string>
+    <string name="sunday">SUN</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THUR</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+
+    <string name="profile">Profile</string>
+    <string name="receive_news">Receive news and updates</string>
+    <string name="change_password">Change password</string>
+    <string name="new_password">New password:</string>
+    <string name="confirm_password">Confirm password:</string>
+    <string name="log_out">Log out</string>
+
+    <string name="settings">Settings</string>
+    <string name="general">GENERAL</string>
+    <string name="other">OTHER</string>
+
+    <string name="details">Details</string>
+    <string name="version">Version 1.0</string>
+    <string name="developed">Developed by:\nPZPI-21-11 student\nVladyslav Rakitin</string>
+    <string name="upgrade_to_premium">"          Upgrade to Premium          "</string>
+
+    <string name="reps">REPS</string>
+    <string name="reps_append">" reps"</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+
+    <!--Dialogs-->
+    <string name="profile_edit">"          Profile edit          "</string>
+
+    <string name="name_exercise">Name:</string>
+    <string name="notes_exercise">Notes (optional):</string>
+    <string name="category_exercise">Category:</string>
+    <string name="new_nickname">New nickname:</string>
+    <string name="new_image">New image (url):</string>
+
+    <string name="premium_version">Premium version (5€/month)</string>
+    <string name="premium_features">- No ads\n- Extra statistics\n- Training recommendations\n- Exercise videos inside the app\n- Early access to new features</string>
+
+    <string name="language_wide">"          Language          "</string>
+    <string name="language">"Language"</string>
+    <string name="english">English</string>
+    <string name="ukrainian">Ukrainian</string>
+
+    <string name="unit_system_wide">"          Unit system          "</string>
+    <string name="unit_system">"Unit system"</string>
+    <string name="imperial">Imperial (lbs)</string>
+    <string name="metric">Metric (kgs)</string>
+
+    <string name="date_format_wide">"          Date format          "</string>
+    <string name="date_format">"Date format"</string>
+    <string name="mm_dd_yyyy">MM-DD-YYYY</string>
+    <string name="dd_mm_yyyy">DD-MM-YYYY</string>
+
+    <string name="week_start_wide">"          Week start          "</string>
+    <string name="week_start">"Week start"</string>
+    <string name="sunday_full">Sunday</string>
+    <string name="monday_full">Monday</string>
+
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="buy">Buy</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+
+    <!--Program-->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+
+    <string name="help">Help</string>
+    <string name="help_value">Help us!</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_value">Leave a feedback!</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="privacy_policy_value">Read privacy policy!</string>
+
+    <string name="imperial_weight">WEIGHT (lbs)</string>
+    <string name="metric_weight">WEIGHT (kgs)</string>
+    <string name="lbs_append">" lbs"</string>
+    <string name="kgs_append">" kgs"</string>
+    <string name="more_append">" more"</string>
+    <string name="delete_approach">"          Delete approach          "</string>
+    <string name="delete_selected_approach">"Delete selected approach?\nAll related data will be deleted permanently!"</string>
+    <string name="selected">selected</string>
+    <string name="permanently">permanently</string>
+    <string name="categories">Categories</string>
+    <string name="exercises">Exercises</string>
+    <string name="empty_categories_list">Categories list is empty</string>
+    <string name="empty_exercises_list">Exercises list is empty</string>
+
+    <string name="new_category">"          New Category          "</string>
+    <string name="edit_category_wide">"          Edit Category          "</string>
+    <string name="new_exercise">"          New Exercise          "</string>
+    <string name="edit_exercise_wide">"          Edit Exercise          "</string>
+    <string name="delete_category_wide">"          Delete category          "</string>
+    <string name="delete_exercise_wide">"          Delete exercise          "</string>
+    <string name="related_data">All related data will be deleted permanently!</string>
+
+    <string name="password_must_contain">Password must contain only Latin symbols or numbers. </string>
+    <string name="password_must_be_between">Password must be between 8 and 12 characters. </string>
+    <string name="passwords_dont_match">Passwords do not match. </string>
+
+    <!--Api-->
+    <string name="api_route">http://10.0.2.2:5000/api/</string>
+    <string name="error_internet">Server error. Check internet connection!</string>
+    <string name="error_server">Server error. Please try later!</string>
+    <string name="error_user">User error. Try to sign in again!</string>
+    <string name="wrong_email">Wrong email!</string>
+    <string name="wrong_password">Wrong password!</string>
+    <string name="wrong_profile">Nickname is already in use!</string>
+    <string name="wrong_category">Category name is already in use!</string>
+    <string name="wrong_exercise">Exercise name is already in use!</string>
+    <string name="successful_login">Signed in successfully!</string>
+    <string name="successful_password">Password is changed successfully!</string>
+    <string name="successful_profile">Data is changed successfully!</string>
+    <string name="add_category">Category is added successfully!</string>
+    <string name="add_exercise">Exercise is added successfully!</string>
+    <string name="edit_category">Category is edited successfully!</string>
+    <string name="edit_exercise">Exercise is edited successfully!</string>
+    <string name="delete_category">Category is deleted successfully!</string>
+    <string name="delete_exercise">Exercise is deleted successfully!</string>
+    <string name="no_category">Category is already deleted!</string>
+    <string name="no_exercise">Exercise is already deleted!</string>
+    <string name="no_approach">Approach is already deleted!</string>
+</resources>

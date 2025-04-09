@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">TraiNotes_Mobile</string>
+    <string name="app_short_name">TraiNotes</string>
+
+    <!--Symbols-->
+    <string name="arrow_back"><![CDATA[<-]]></string>
+    <string name="arrow_forward"><![CDATA[->]]></string>
+    <string name="circle_checked"><![CDATA[⚫]]></string>
+    <string name="circle_unchecked"><![CDATA[⚪]]></string>
+
+    <!--Toasts-->
+    <string name="enter_values">Будь ласка, введіть значення для цього підходу!</string>
+    <string name="wait_for_updates">Чекайте на нові оновлення!</string>
+    <string name="password_isnt_changed">Пароль не змінено. Невірний ввід!</string>
+
+    <!--Layouts-->
+    <string name="sign_in_to_app">Увійдіть в TraiNotes</string>
+    <string name="email">Електронна пошта</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in">"                    Увійти                    "</string>
+    <string name="forgot_password">Забули пароль?</string>
+    <string name="dont_have_account">Не маєте облікового запису?</string>
+    <string name="sign_up">Зареєструватися</string>
+
+    <string name="empty_workout_log">Журнал тренувань порожній</string>
+    <string name="sunday">НД</string>
+    <string name="monday">ПН</string>
+    <string name="tuesday">ВТ</string>
+    <string name="wednesday">СР</string>
+    <string name="thursday">ЧТ</string>
+    <string name="friday">ПТ</string>
+    <string name="saturday">СБ</string>
+
+    <string name="profile">Профіль</string>
+    <string name="receive_news">Отримуйте новини та оновлення</string>
+    <string name="change_password">Змінити пароль</string>
+    <string name="new_password">Новий пароль:</string>
+    <string name="confirm_password">Підтвердити пароль:</string>
+    <string name="log_out">Вийти</string>
+
+    <string name="settings">Налаштування</string>
+    <string name="general">ЗАГАЛЬНІ</string>
+    <string name="other">ІНШІ</string>
+
+    <string name="details">Деталі</string>
+    <string name="version">Версія 1.0</string>
+    <string name="developed">Розроблено:\nСтудентом групи ПЗПІ-21-11\nРакітіним Владиславом</string>
+    <string name="upgrade_to_premium">"          Покращити до преміум          "</string>
+
+    <string name="reps">ПІДХОДИ</string>
+    <string name="reps_append">" підходи"</string>
+    <string name="save">Зберегти</string>
+    <string name="clear">Очистити</string>
+
+    <!--Dialogs-->
+    <string name="profile_edit">"          Редагування профілю          "</string>
+
+    <string name="name_exercise">Назва:</string>
+    <string name="notes_exercise">Примітки (необов\'язково):</string>
+    <string name="category_exercise">Категорія:</string>
+    <string name="new_nickname">Новий нікнейм:</string>
+    <string name="new_image">Нове зображення (URL):</string>
+
+    <string name="premium_version">Преміум-версія (120грн/міс)</string>
+    <string name="premium_features">- Без реклами\n- Додаткова статистика\n- Рекомендації щодо тренувань\n- Відео вправ в програмі\n- Ранній доступ до нових функцій</string>
+
+    <string name="language_wide">"          Мова          "</string>
+    <string name="language">"Мова"</string>
+    <string name="english">Англійська</string>
+    <string name="ukrainian">Українська</string>
+
+    <string name="unit_system_wide">"          Система вимірювань          "</string>
+    <string name="unit_system">"Система вимірювань"</string>
+    <string name="imperial">Імперська (фунти)</string>
+    <string name="metric">Метрична (кг)</string>
+
+    <string name="date_format_wide">"          Формат дати          "</string>
+    <string name="date_format">"Формат дати"</string>
+    <string name="mm_dd_yyyy">ММ-ДД-РРРР</string>
+    <string name="dd_mm_yyyy">ДД-ММ-РРРР</string>
+
+    <string name="week_start_wide">"          Початок тижня          "</string>
+    <string name="week_start">"Початок тижня"</string>
+    <string name="sunday_full">Неділя</string>
+    <string name="monday_full">Понеділок</string>
+
+    <string name="accept">Прийняти</string>
+    <string name="cancel">Скасувати</string>
+    <string name="buy">Купити</string>
+    <string name="delete">Видалити</string>
+    <string name="edit">Змінити</string>
+
+    <!--Program-->
+    <string name="today">Сьогодні</string>
+    <string name="yesterday">Вчора</string>
+    <string name="tomorrow">Завтра</string>
+
+    <string name="help">Допомога</string>
+    <string name="help_value">Допоможіть нам!</string>
+    <string name="feedback">Зворотний зв\'язок</string>
+    <string name="feedback_value">Залиште відгук!</string>
+    <string name="privacy_policy">Політика конфіденційності</string>
+    <string name="privacy_policy_value">Прочитайте політику конфіденційності!</string>
+
+    <string name="imperial_weight">ВАГА (фунти)</string>
+    <string name="metric_weight">ВАГА (кг)</string>
+    <string name="lbs_append">" фунтів"</string>
+    <string name="kgs_append">" кг"</string>
+    <string name="more_append">" більше"</string>
+    <string name="delete_approach">"          Видалити підхід          "</string>
+    <string name="delete_selected_approach">"Видалити вибраний підхід?\nУсі пов'язані дані будуть видалені назавжди!"</string>
+    <string name="selected">вибрано</string>
+    <string name="permanently">назавжди</string>
+    <string name="categories">Категорії</string>
+    <string name="exercises">Вправи</string>
+    <string name="empty_categories_list">Список категорій порожній</string>
+    <string name="empty_exercises_list">Список вправ порожній</string>
+
+    <string name="new_category">"          Нова Категорія          "</string>
+    <string name="edit_category_wide">"          Редагувати Категорію          "</string>
+    <string name="new_exercise">"          Нова Вправа          "</string>
+    <string name="edit_exercise_wide">"          Редагувати Вправу          "</string>
+    <string name="delete_category_wide">"          Видалити категорію          "</string>
+    <string name="delete_exercise_wide">"          Видалити вправу          "</string>
+    <string name="related_data">Усі пов\'язані дані будуть видалені назавжди!</string>
+
+    <string name="password_must_contain">Пароль повинен містити лише латинські символи або цифри. </string>
+    <string name="password_must_be_between">Пароль повинен бути від 8 до 12 символів. </string>
+    <string name="passwords_dont_match">Паролі не співпадають. </string>
+
+    <!--Api-->
+    <string name="api_route">http://10.0.2.2:5000/api/</string>
+    <string name="error_internet">Помилка сервера. Перевірте підключення до Інтернету!</string>
+    <string name="error_server">Помилка сервера. Спробуйте пізніше!</string>
+    <string name="error_user">Помилка користувача. Спробуйте увійти знову!</string>
+    <string name="wrong_email">Невірна електронна пошта!</string>
+    <string name="wrong_password">Невірний пароль!</string>
+    <string name="wrong_profile">Нікнейм вже використовується!</string>
+    <string name="wrong_category">Ім\'я категорії вже використовується!</string>
+    <string name="wrong_exercise">Ім\'я вправи вже використовується!</string>
+    <string name="successful_login">Успішно увійшли!</string>
+    <string name="successful_password">Пароль успішно змінено!</string>
+    <string name="successful_profile">Дані успішно змінено!</string>
+    <string name="add_category">Категорія успішно додана!</string>
+    <string name="add_exercise">Вправа успішно додана!</string>
+    <string name="edit_category">Категорія успішно відредагована!</string>
+    <string name="edit_exercise">Вправа успішно відредагована!</string>
+    <string name="delete_category">Категорія успішно видалена!</string>
+    <string name="delete_exercise">Вправа успішно видалена!</string>
+    <string name="no_category">Категорія вже видалена!</string>
+    <string name="no_exercise">Вправа вже видалена!</string>
+    <string name="no_approach">Підхід вже видалений!</string>
+</resources>
